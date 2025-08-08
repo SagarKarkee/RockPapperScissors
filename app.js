@@ -9,14 +9,16 @@ const compPoint = document.getElementById("comp-score");
 const drawPoint = document.getElementById("draw-score");
 const btn = document.getElementById("btn")
 
-const restartGame = () =>{
+const restartGame = () => {
     userScore = 0;
     compScore = 0;
     drawScore = 0;
     userPoint.textContent = 0;
     compPoint.textContent = 0;
     drawPoint.textContent = 0;
-    msg.textContent = "Play your Move";
+    msg.textContent = "Play Your Move";
+    msg.style.backgroundColor = " rgb(205, 192, 175)";
+    msg.style.color = "black";
 }
 
 // show winner
@@ -25,10 +27,10 @@ const showWinner = (userWin, userChoice, compChoice) => {
         // console.log("you win")
         userScore++;
         userPoint.innerText = userScore;
-        msg.innerText =`You Win!, Your Choice ${userChoice} beats Computer's Choice ${compChoice}`;
+        msg.innerText = `You Win!, Your Choice ${userChoice} beats Computer's Choice ${compChoice}`;
         msg.style.backgroundColor = "green";
-         msg.style.color = "white";
-        
+        msg.style.color = "white";
+
 
     } else {
         // console.log("you lose")
@@ -36,7 +38,7 @@ const showWinner = (userWin, userChoice, compChoice) => {
         compPoint.innerText = compScore;
         msg.innerText = `You Lose! Computer's Choice ${compChoice} beats Your Choice ${userChoice}`;
         msg.style.backgroundColor = "blue";
-         msg.style.color = "white";
+        msg.style.color = "white";
 
     }
 }

@@ -26,6 +26,7 @@ h1 {
 .choice {
     height: 200px;
     width: 200px;
+    margin-bottom: -1rem;
 }
 
 img {
@@ -79,7 +80,7 @@ img {
     padding: 1rem;
     border-radius: 1rem;
     color: black;
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
 }
 
 #btn {

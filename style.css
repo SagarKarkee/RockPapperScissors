@@ -13,6 +13,8 @@ h1 {
     color: #fff;
     height: 5rem;
     line-height: 5rem;
+    position: sticky;
+    top: 0;
 }
 
 .choices {
@@ -32,7 +34,7 @@ img {
     object-fit: cover;
     border-radius: 50%;
     gap: 3rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 5);
     transition: all 0.3s ease;
 
@@ -41,7 +43,8 @@ img {
 .choice:hover {
     opacity: 0.9;
     cursor: poiner;
-    box-shadow: 0 4px 5px whitesmoke;
+    /* box-shadow: 0 4px 5px whitesmoke; */
+    border-radius: 50%;
     /* transform: translateY(-5px); */
     transform: translate3d(0, -10px, 5px);
     transition: all 0.3s ease;
@@ -52,7 +55,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     gap: 2rem;
     font-size: 2rem;
 }
@@ -64,7 +67,7 @@ img {
 }
 
 .msg-container {
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 #msg {
@@ -91,6 +94,6 @@ img {
 #btn:hover{
     cursor: poiner;
     box-shadow: 0 4px 5px whitesmoke;
-    transform: translate3d(0, -10px, 5px);
+    transform: translate3d(0, -3px, 5px);
     transition: all 0.3s ease;
 }
